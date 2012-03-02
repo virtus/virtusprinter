@@ -3,6 +3,7 @@ require "httparty"
 
 class VirtusPrinter
   include HTTParty
+  default_timeout 10
   attr_reader :error
 
   def initialize(remote = true)
