@@ -6,7 +6,7 @@ class VirtusPrinter
   attr_reader :error
 
   def initialize(remote = true)
-    config = YAML::load_file("./config.yml")
+    config = YAML::load_file("./virtusprinter.yml")
     @vp_domain = config['virtusprinter']['domain']
     @vp_subdomain = config['virtusprinter']['subdomain']
     @vp_email = config['virtusprinter']['email']
